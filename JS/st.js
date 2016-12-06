@@ -6,8 +6,8 @@ var essai = 0;
 
 function bouton(){
   var nbre = document.getElementById("tapez").value;
-  var nbr1 = nombreAleatoire - 15
-  var nbr2 = nombreAleatoire + 15
+    var nbr1 = nombreAleatoire - 15
+    var nbr2 = nombreAleatoire + 15
    if (nbre == ""){
          alert("Saisir un nombre!");
      }
@@ -31,13 +31,15 @@ function bouton(){
 } else if (diff<20){
   document.getElementById("droite").innerHTML = "Tiede";
   document.getElementById("droite").style.color ="yellow";
-} else if (essai==4){
+
+} else if (essai==5){
   document.getElementById("droite").innerHTML = "Le nombre est entre "+nbr1 + " et " + nbr2;
   document.getElementById("droite").style.color ="green";
 }
-  else if (essai==9){
+  else if (essai==10){
   document.getElementById("droite").innerHTML = "GAME OVER ! Le chiffre était "+ nombreAleatoire;
   document.getElementById("droite").style.color ="blue";
+  location.reload();
 } else  {
   document.getElementById("droite").innerHTML = "Froid";
   document.getElementById("droite").style.color = "lightblue";
